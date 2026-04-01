@@ -20,6 +20,10 @@ Daily Progress
 * docker ps -a(show everything)
 * docker run -it ubuntu(change into root directory of Linux)
 * whoami(Linux command)
+* `docker run -p 80:80 nginx`
+* `docker run -e MY_VAR =value httpd env (set and check environment varibale)`
+* `docker run -it -e MY_NAME=NAVNEET ubuntu bash`
+* `check krne ke liye - echo $MY_NAME`
 * Passing Environment variable from host system:
 	1.  `$env:APP_PORT=8080` -> Powershell ; `export APP_PORT=8080` -> Ubuntu
 	2. Check host variable -> `echo $env:APP_PORT`
