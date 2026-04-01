@@ -20,3 +20,8 @@ Daily Progress
 * docker ps -a(show everything)
 * docker run -it ubuntu(change into root directory of Linux)
 * whoami(Linux command)
+* Passing Environment variable from host system:
+	1.  `$env:APP_PORT=8080` -> Powershell ; `export APP_PORT=8080` -> Ubuntu
+	2. Check host variable -> `echo $env:APP_PORT`
+	3. `docker run -e APP_PORT=$env:APP_PORT nginx env` 
+	4. create a project and change the path to directory of that folder then run -> `docker run --env-file .env nginx env`
